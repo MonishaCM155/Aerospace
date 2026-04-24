@@ -1,0 +1,151 @@
+:root{
+  --bg:#f4f5f7;
+  --card-bg:#e6e7e8;
+  --muted:#60656f;
+  --accent-1:#4b6ef6;
+  --accent-2:#7dd3fc;
+  --good:#36b37e;
+  --warn:#f59e0b;
+  --bad:#ef4444;
+  --glass: rgba(255,255,255,0.6);
+  --radius:28px;
+  --shadow: 0 8px 30px rgba(15,23,42,0.06);
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+html{
+  height:100%;
+}
+
+body{
+  min-height:100vh;
+  margin:0;
+  background:linear-gradient(210deg,#adadad,#eef2f6);
+  background-attachment: fixed;
+  font-family:var(--font);
+  color:#0b1220;
+  -webkit-font-smoothing:antialiased;
+}
+*{box-sizing:border-box}
+
+
+/* NAV */
+.nav{
+  position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;justify-content:center;gap:2%;
+  background:rgba(255,255,255,0.7);backdrop-filter:blur(10px);box-shadow:0 2px 8px rgba(10,14,20,0.04);z-index:1000;
+}
+.nav h2{margin:0;font-weight:700;letter-spacing:0.2px}
+.nav-but{width:44px;height:44px;border-radius:50%;border:none;background:transparent;display:grid;place-items:center;cursor:pointer; transition: all ease-in-out 150ms;}
+.nav-but:hover{background-color: rgba(96, 101, 111,0.3);}
+.img-but{width:60%}
+
+/* MAIN LAYOUT */
+.main{margin-top:86px;display:flex;flex-direction:column;align-items:center;padding:28px 20px}
+.main h1{margin:6px 0 18px 0;font-size:28px;font-weight:800;color:#091127}
+
+/* cards container - stacked like original, narrower */
+.cards-container{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:28px;
+  padding-bottom:40px;
+}
+
+/* metro card - fixed sensible width with max */
+.card{
+  width:min(900px, 86%);
+  background:var(--card-bg);
+  border-radius:32px;
+  padding:28px 36px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  box-shadow:var(--shadow);
+  cursor:pointer;
+  transition:transform .16s ease,box-shadow .16s ease;
+  border:1px solid rgba(0,0,0,0.04);
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(10,14,20,0.08)}
+
+.card-left{flex:1}
+.rank{width:48px;height:48px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:800;color:#071127;margin-bottom:8px}
+.card-left h2{margin:0;font-size:32px;font-weight:800;color:#071127}
+.forecast{display:flex;gap:18px;margin-top:18px;align-items:flex-end}
+.bar-wrapper{display:flex;flex-direction:column;align-items:center;gap:8px}
+.bar{width:36px;border-radius:12px}
+.bar-date{font-size:12px;color:var(--muted);margin-top:6px}
+.bar-value{font-size:12px;font-weight:700;color:#071127}
+
+/* right column */
+.card-right{display:flex;flex-direction:column;gap:16px;align-items:flex-end}
+.aqi-box{padding:22px;border-radius:20px;color:white;font-size:36px;font-weight:800;min-width:160px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+.weather-box{padding:14px;border-radius:16px;background:#23262b;color:#fff;min-width:140px;text-align:center;font-weight:700}
+
+/* severity colours and glow */
+.green{background:linear-gradient(90deg,#6be1a7,#2fa36d);box-shadow:0 12px 40px rgba(47,163,109,0.14)}
+.yellow{background:linear-gradient(90deg,#ffe58a,#f59e0b);box-shadow:0 14px 44px rgba(245,158,11,0.14);color:#08121a}
+.red{background:linear-gradient(90deg,#ff7a7a,#ef4444);box-shadow:0 18px 60px rgba(239,68,68,0.18)}
+
+/* city page container - same narrower width */
+.city-container{
+  width: min(980px, 90%);
+  margin:40px auto 80px auto;
+  background:var(--card-bg);
+  border-radius:32px;padding:36px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,0.04)
+}
+.city-header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.city-header h1{margin:0;font-size:44px;font-weight:800}
+.city-header .aqi-large{padding:22px 30px;border-radius:22px;color:#fff;font-weight:900;font-size:36px}
+
+/* remove the divider element visually if present */
+.divider{display:none}
+
+/* station rows - full width but compact */
+.section-title{text-align:center;color:#444;margin:8px 0 24px 0;font-size:20px}
+.station-row{display:flex;align-items:center;margin:18px 0;width:100%}
+.station-name{width:20%;font-size:18px}
+.station-bar{height:14px;border-radius:10px;flex:1;margin:0 16px;background:#d9dbe0}
+.station-value{width:60px;font-weight:800;text-align:right}
+
+/* causes / solutions */
+.insight-grid{display:flex;gap:28px;margin-top:28px;flex-wrap:wrap}
+.insight-card{flex:1;padding:18px;border-radius:16px;background:rgba(255,255,255,0.6);color:#071127;min-width:220px}
+.insight-card h3{margin-top:0}
+
+/* health block */
+.health-block{margin-top:18px;color:#333;line-height:1.45}
+
+/* small screens */
+@media (max-width:900px){
+  .card{width:min(720px,96%);padding:20px;border-radius:24px}
+  .card-right{align-self:stretch;flex-direction:row;justify-content:space-between}
+  .aqi-box{min-width:120px;font-size:28px;padding:16px}
+  .bar{width:30px}
+  .city-header h1{font-size:32px}
+  .city-header .aqi-large{font-size:28px;padding:16px 22px}
+  .city-container{width:92%;padding:24px;border-radius:24px}
+  .station-name{width:28%}
+}
+
+/* phones */
+@media (max-width:480px){
+  .card{
+    flex-direction:column;
+    align-items:stretch;
+    gap:16px;
+  }
+
+  .card-right{
+    width:100%;
+    align-items:stretch;
+  }
+
+  .aqi-box{
+    width:100%;
+    min-width:unset;
+    border-radius:16px;
+    font-size:26px;
+    padding:14px;
+  }
+}

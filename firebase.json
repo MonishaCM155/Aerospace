@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "aeroscope26",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "backend/**",
+      "**/.*",
+      "node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "updatedAt": "2026-01-05T18:51:42Z",
+  "cities": [
+    {
+      "city": "Delhi",
+      "aqi": 232,
+      "forecast": [
+        202,
+        217,
+        232,
+        242,
+        252,
+        237
+      ],
+      "stations": [
+        {
+          "name": "Delhi Central",
+          "aqi": 232
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Delhi Central",
+        "aqi": 232
+      }
+    },
+    {
+      "city": "Mumbai",
+      "aqi": 154,
+      "forecast": [
+        124,
+        139,
+        154,
+        164,
+        174,
+        159
+      ],
+      "stations": [
+        {
+          "name": "Mumbai Central",
+          "aqi": 154
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Mumbai Central",
+        "aqi": 154
+      }
+    },
+    {
+      "city": "Bengaluru",
+      "aqi": 133,
+      "forecast": [
+        103,
+        118,
+        133,
+        143,
+        153,
+        138
+      ],
+      "stations": [
+        {
+          "name": "Bengaluru Central",
+          "aqi": 133
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Bengaluru Central",
+        "aqi": 133
+      }
+    },
+    {
+      "city": "Chennai",
+      "aqi": 63,
+      "forecast": [
+        33,
+        48,
+        63,
+        73,
+        83,
+        68
+      ],
+      "stations": [
+        {
+          "name": "Chennai Central",
+          "aqi": 63
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Chennai Central",
+        "aqi": 63
+      }
+    },
+    {
+      "city": "Hyderabad",
+      "aqi": 83,
+      "forecast": [
+        53,
+        68,
+        83,
+        93,
+        103,
+        88
+      ],
+      "stations": [
+        {
+          "name": "Hyderabad Central",
+          "aqi": 83
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Hyderabad Central",
+        "aqi": 83
+      }
+    },
+    {
+      "city": "Kolkata",
+      "aqi": 171,
+      "forecast": [
+        141,
+        156,
+        171,
+        181,
+        191,
+        176
+      ],
+      "stations": [
+        {
+          "name": "Kolkata Central",
+          "aqi": 171
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Kolkata Central",
+        "aqi": 171
+      }
+    },
+    {
+      "city": "Pune",
+      "aqi": 232,
+      "forecast": [
+        202,
+        217,
+        232,
+        242,
+        252,
+        237
+      ],
+      "stations": [
+        {
+          "name": "Pune Central",
+          "aqi": 232
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Pune Central",
+        "aqi": 232
+      }
+    },
+    {
+      "city": "Ahmedabad",
+      "aqi": 129,
+      "forecast": [
+        99,
+        114,
+        129,
+        139,
+        149,
+        134
+      ],
+      "stations": [
+        {
+          "name": "Ahmedabad Central",
+          "aqi": 129
+        }
+      ],
+      "mostPollutedStation": {
+        "name": "Ahmedabad Central",
+        "aqi": 129
+      }
+    }
+  ]
+}

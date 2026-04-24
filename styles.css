@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f1b2d, #050b14);
+  color: #eaeaea;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 48px 20px 80px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #1b2a3d;
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 10px 0 56px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card {
+  background: #0d1826;
+  border-radius: 28px;
+  padding: 42px 40px 48px;
+  margin-bottom: 56px;
+  position: relative;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.55);
+}
+
+.rank {
+  position: absolute;
+  top: 26px;
+  left: 34px;
+  font-size: 22px;
+  opacity: 0.45;
+}
+
+.left {
+  flex: 2.2;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.city {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.city span {
+  font-size: 18px;
+  opacity: 0.55;
+}
+
+.subtitle {
+  margin: 12px 0 28px;
+  opacity: 0.55;
+}
+
+.bars {
+  display: flex;
+  gap: 22px;
+  align-items: flex-end;
+  height: 200px;
+}
+
+.bar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 46px;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.day {
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+.aqi {
+  font-size: 64px;
+  font-weight: 800;
+  text-align: right;
+  margin-bottom: 6px;
+}
+
+.minmax {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 26px;
+}
+
+.label {
+  font-size: 14px;
+  opacity: 0.65;
+  margin-bottom: 6px;
+}
+
+.list {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.85;
+  text-align: right;
+}
+
+.red {
+  background: #ff4d4d;
+  box-shadow:
+    0 0 18px rgba(255,77,77,0.65),
+    0 0 40px rgba(255,77,77,0.35);
+}
+
+.yellow {
+  background: #ffcc00;
+  box-shadow:
+    0 0 18px rgba(255,204,0,0.65),
+    0 0 40px rgba(255,204,0,0.35);
+}
+
+.green {
+  background: #2ecc71;
+  box-shadow:
+    0 0 18px rgba(46,204,113,0.65),
+    0 0 40px rgba(46,204,113,0.35);
+}
+
+.red-glow {
+  color: #ff4d4d;
+  text-shadow: 0 0 36px rgba(255,77,77,0.95);
+}
+
+.yellow-glow {
+  color: #ffcc00;
+  text-shadow: 0 0 36px rgba(255,204,0,0.9);
+}
+
+.green-glow {
+  color: #2ecc71;
+  text-shadow: 0 0 36px rgba(46,204,113,0.9);
+}
